@@ -1,0 +1,23 @@
+Magik> 
+Magik> _block
+		_dynamic !a!
+		!a!<<5
+		write(!a!)
+		_block
+			_dynamic !a!
+			!a!<<500
+			write(!a!)
+		_endblock
+		write(!a!)
+	_endblock
+$
+[no reporter] **** Parser warning: on line 6. Variable '!a!' already declared at this scope level. duplicate_variable_name
+Global !a! does not exist: create it? (Y) y
+$
+Defining global !a!
+5
+500
+5
+Magik> 
+Magik> 
+Magik> 
